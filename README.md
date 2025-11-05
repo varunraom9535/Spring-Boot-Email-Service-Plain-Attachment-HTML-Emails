@@ -91,8 +91,7 @@ SBPEmailSenderProject/
 ## 🚀 Setup Instructions
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/varunraom9535/Spring-Boot-Email-Service-Plain-Attachment-HTML-Emails.git
+   ```bash git clone https://github.com/varunraom9535/Spring-Boot-Email-Service-Plain-Attachment-HTML-Emails.git
 
 cd Spring-Boot-Email-Service-Plain-Attachment-HTML-Emails
 
@@ -117,10 +116,6 @@ spring.mail.properties.mail.smtp.starttls.enable=true
   "subject": "Welcome!",
   "body": "This is a test email from Spring Boot Email Service."
 }
-
-
-
-
 
 ## 👨‍💻 Author
 **Varun Rao M**
