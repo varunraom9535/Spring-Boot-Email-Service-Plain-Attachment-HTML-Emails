@@ -8,10 +8,14 @@
 
 ## Overview
 
-This project is a **Spring Boot-based Email Service** that provides a robust, flexible, and scalable solution for sending emails. It supports sending **plain text emails**, **emails with attachments**, and **HTML emails with attachments**. The application is designed to be easily integrated into any enterprise-grade Java backend system.
+This project is a **Spring Boot-based Email Service** that supports:
 
-The service leverages **Spring Boot**, **JavaMailSender**, and **MIME messages** to ensure reliable email delivery.
+✅ Plain Text Emails  
+✅ Emails with Attachments  
+✅ HTML Emails with Attachments  
 
+It is lightweight, modular, and easy to integrate into any Java backend system.  
+Powered by **JavaMailSender + Spring Boot + MIME messages**.
 
 ---
 
@@ -77,8 +81,9 @@ SBPEmailSenderProject/
 │       └── java/                           # Unit and integration tests
 ├── pom.xml                                 # Maven dependencies
 └── README.md                               # Project documentation
+```
 
-
+---
 
 ## ⚙️ Tech Stack
 - **Java 17+**
@@ -91,31 +96,63 @@ SBPEmailSenderProject/
 ## 🚀 Setup Instructions
 
 1. **Clone the repository**
-   ```bash git clone https://github.com/varunraom9535/Spring-Boot-Email-Service-Plain-Attachment-HTML-Emails.git
 
+### ✅ 1. Clone the repository
+```bash
+git clone https://github.com/varunraom9535/Spring-Boot-Email-Service-Plain-Attachment-HTML-Emails.git
 cd Spring-Boot-Email-Service-Plain-Attachment-HTML-Emails
+```
 
-
-##Configure your email in application.properties:
+### ✅ 2. Configure your email in `application.properties`
+```properties
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username=your_email@gmail.com
 spring.mail.password=your_app_password
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
+```
 
-## 📬 API Example
+### ✅ 3. Run the Application
+```bash
+mvn spring-boot:run
+```
 
-### 1️⃣ Send Simple Email
-**POST** `/api/email/send`
+---
 
-**Request Body:**
+
+## 📬 Sample API Request
+
+### ✅ Send Plain Email  
 ```json
 {
-  "to": "test@example.com",
-  "subject": "Welcome!",
-  "body": "This is a test email from Spring Boot Email Service."
+  "to": "user@example.com",
+  "subject": "Hello!",
+  "body": "This is a plain text email."
 }
+```
+
+### ✅ Send Email with Attachment  
+```json
+{
+  "to": "user@example.com",
+  "subject": "Document",
+  "body": "Please find the attachment.",
+  "attachment": "varunraom.pdf"
+}
+```
+
+---
+
+## 🔮 Future Enhancements
+
+- ✅ CC & BCC support  
+- ✅ Multiple attachments  
+- ✅ Inline images  
+- ✅ Email scheduling  
+- ✅ AWS SES / SendGrid integration  
+
+---
 
 ## 👨‍💻 Author
 **Varun Rao M**
