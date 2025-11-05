@@ -77,3 +77,52 @@ SBPEmailSenderProject/
 │       └── java/                           # Unit and integration tests
 ├── pom.xml                                 # Maven dependencies
 └── README.md                               # Project documentation
+
+
+
+## ⚙️ Tech Stack
+- **Java 17+**
+- **Spring Boot 3.x**
+- **Spring Mail (JavaMailSender)**
+- **Thymeleaf (for HTML templates)**
+- **Maven**
+- **Lombok**
+
+## 🚀 Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/varunraom9535/Spring-Boot-Email-Service-Plain-Attachment-HTML-Emails.git
+
+cd Spring-Boot-Email-Service-Plain-Attachment-HTML-Emails
+
+
+##Configure your email in application.properties:
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=your_email@gmail.com
+spring.mail.password=your_app_password
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+## 📬 API Example
+
+### 1️⃣ Send Simple Email
+**POST** `/api/email/send`
+
+**Request Body:**
+```json
+{
+  "to": "test@example.com",
+  "subject": "Welcome!",
+  "body": "This is a test email from Spring Boot Email Service."
+}
+
+
+
+
+
+## 👨‍💻 Author
+**Varun Rao M**
+- GitHub: [@varunraom9535](https://github.com/varunraom9535)
+- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-linkedin)
